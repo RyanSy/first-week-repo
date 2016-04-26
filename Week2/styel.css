@@ -1,0 +1,18 @@
+#main_container {
+ max-width: 400px;
+ margin: 20px auto;
+ border: 2px solid #cccccc;
+ padding: 5px;
+}
+
+.floated_box {
+ float: left;
+ width: 100px;
+ height: 100px;
+ border: 1px solid #990000;
+ margin: 10px;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<title>Pangram</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var str = 'stuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuff';
+		function pangramThatThing(s) {
+			var containerForMyLetters = [];
+			var arr = s.split ('');
+			for (var i = 0; i < arr.length; i++) {
+				if (containerForMyLetters.indexOf(arr[i])) == -1 {
+					containerForMyLetters.push (arr[i]);
+				}
+			}
+			if (s.length < 26) {
+				return false;
+			}
+			else if {
+
+			}
+		}
+		console.log(pangramThatThing(str));
+	</script>
+</body>
+
+</html>

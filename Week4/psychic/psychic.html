@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Psychic Game</title>
+</head>
+<body>
+
+<div id="game">
+<p>Guess what letter I'm thinking of</p>
+<p id="wins">Wins: 0</p>
+<p id="losses">Losses: 0</p>
+<p id="guessesLeft">Guesses left: 9</p>
+<p id="userGuesses">Your Guesses so far:</p>
+</div>
+
+<script type="text/javascript">
+
+var listOfLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var wins = 0;
+var losses = 0;
+var guessesLeft = 9;
+var computerGuess = listOfLetters[Math.floor(Math.random() * listOfLetters.length)];
+var userGuesses = []; 
+
+document.onkeyup = function(event) {
+    var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+    userGuesses.push(userGuess);
+    if (userGuess == computerGuess){
+        wins++;
+        document.querySelector('#wins').innerHTML = "Wins: " + wins;
+        document.querySelector('#userGuesses').innerHTML = "Your Guesses so far: " + userGuess;
+    }
+    else{
+    guessesLeft--
+     document.querySelector('#guessesLeft').innerHTML = "Guesses left: " + guessesLeft;
+     document.querySelector('#userGuesses').innerHTML = "Your Guesses so far: " + userGuesses.join(', ');
+    }
+    if (guessesLeft === 0){
+    losses++;
+    document.querySelector('#losses').innerHTML = "Losses: " + losses;
+    } 
+}
+
+</script>
+</body>
+</html>

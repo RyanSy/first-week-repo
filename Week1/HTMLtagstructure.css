@@ -1,0 +1,51 @@
+
+* {
+padding: 10px;
+margin: 10px;
+box-sizing: border-box;
+font: 300 18px/30px Georgia, serif;
+}
+body {
+padding: 0;
+margin: 0;
+}
+header {
+background: #ddd;
+}
+nav {
+background: #eee;
+}
+section#main {
+background: #ccc;
+width: 65%;
+float: left;
+}
+section#side {
+width: 30%;
+background: #ccc;
+float: right;
+}
+article {
+background: #eee;
+overflow: auto;
+}
+aside {
+width: 50%;
+float: right;
+background: #aaa;
+margin-top: 0;
+}
+footer {
+background: #999;
+}
+h1, h2 {
+background: #eee;
+}
+p {
+background: #ddd;
+}
+.clearfix {
+clear: both;
+margin: 0; 
+padding: 0;
+}

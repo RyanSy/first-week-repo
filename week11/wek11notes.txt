@@ -1,0 +1,7 @@
+js constructors
+
+- DRY: don’t repeat yourself
+
+- capitalize names of constructors
+
+ls -a check for git

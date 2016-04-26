@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    3.2
+  </title>
+</head>
+<body>
+  <script type="text/javascript">
+    var coolPeople = ['bruce lee', 'arnold schwarzenegger', 'will smith', 'esther', 'marie curie', 'joan of arc'];
+
+    console.log (coolPeople[0]);
+    console.log (coolPeople[1]);
+    console.log (coolPeople[2]);
+    console.log (coolPeople[3]);
+    console.log (coolPeople[4]);
+    console.log (coolPeople[5]);
+
+    var drinks = ['JACK & COKE', 'RED BULL & HENNESEY', 'GLENLIVET 18 YEAR NEAT', 'BULLEIT ON THE ROCKS', 'GREY GOOSE AND 7UP'];
+
+    console.log (drinks[0].toLowerCase());
+    console.log (drinks[1].toLowerCase());
+    console.log (drinks[2].toLowerCase());
+    console.log (drinks[3].toLowerCase());
+    console.log (drinks[4].toLowerCase());
+
+    var gameboy = ['Game Boy', 'nintendo', 149.99];
+    var pokemon = ['Pokemon Blue', 'nintendo', 49.99];
+    var tetris = ['Tetris', 'SEGA', 49.99];
+
+    var cart = [gameboy, pokemon, tetris];
+
+    console.log (cart[1][0]);
+    console.log (cart[2][2]);
+    console.log (cart[1][0]);
+    cart [2] [2] = 9012;
+    console.log (cart[2][2]);
+    cart [0] [0] = 'Game Boy Advance';
+    console.log (cart[0] [0]);
+
+    var mario = ['Mario Cart', 'nintendo', 25.99];
+    cart.push(mario);
+
+    var myFarm = ['chickens', 'pigs', 'cows', 'horses', 'ostriches'];
+    for(var i=0; i<myFarm.length; i++) {  
+    
+      alert(myFarm[i]);
+
+    if(myFarm[i].charAt(0)=="c" || myFarm[i].charAt(0)=="o") {
+      
+      alert('pigs');
+
+    }
+    
+  </script>
+</body>
+</html>

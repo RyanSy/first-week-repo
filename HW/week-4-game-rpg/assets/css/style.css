@@ -1,0 +1,10 @@
+body {
+    background-image: url(../images/star_wars_xwing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    font-family: "Monaco";
+}
+
+.character-list {
+    display: inline-block;
+    }
